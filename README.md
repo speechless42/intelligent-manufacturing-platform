@@ -4,7 +4,7 @@
 作者具傳統封裝設備工程背景（Hitachi DB800、Esec 2000 操作經驗），本作品用來練習並展示
 「製造數據分析」所需的能力：不只是畫圖表，而是說明**為什麼這樣分類、為什麼這樣派工**。
 
-**線上展示（GitHub Pages）**：https://REPLACE_WITH_USERNAME.github.io/intelligent-manufacturing-platform/
+**線上展示（GitHub Pages）**：https://speechless42.github.io/intelligent-manufacturing-platform/
 **互動雛形（Claude Artifact）**：https://claude.ai/code/artifact/4f744405-a14c-4117-afa8-2a1328dd3cf1
 
 > 本專案沒有串接任何真實設備或資料庫。所有 Alarm 事件、機台參數、材料批號風險都是
