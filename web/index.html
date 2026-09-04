@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>設備 Alarm 根因分析台</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div id="app"></div>
+
+  <!-- Vue 3 + Vue Router（CDN 全域建置版，無建置工具，見 plan.md 技術棧決策） -->
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.4.38/dist/vue.global.prod.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue-router@4.4.5/dist/vue-router.global.prod.js"></script>
+  <!-- Chart.js（統計圖表） -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.5.1/chart.umd.min.js"></script>
+  <!-- Anime.js（互動動畫） -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+  <!-- 固定資料（Alarm 目錄、材料批號風險） -->
+  <script src="src/data/alarm-catalog.js"></script>
+  <script src="src/data/material-lot-risk.js"></script>
+  <!-- 情境設定 -->
+  <script src="src/scenarios/scenario-profiles.js"></script>
+  <!-- 純函式邏輯：資料生成 -> 分類 -> 派工/良率規則 -->
+  <script src="src/logic/generate-events.js"></script>
+  <script src="src/logic/classify.js"></script>
+  <script src="src/logic/dispatch-rules.js"></script>
+  <!-- 圖表包裝 -->
+  <script src="src/charts/render-charts.js"></script>
+  <!-- Vue 元件 -->
+  <script src="src/components/AlarmTable.js"></script>
+  <script src="src/components/AlarmDetailPanel.js"></script>
+  <script src="src/components/MaterialLotRiskList.js"></script>
+  <script src="src/components/ScenarioSelector.js"></script>
+  <!-- 共用狀態（介紹頁／資料頁共用同一份資料） -->
+  <script src="src/store.js"></script>
+  <!-- 路由頁面 -->
+  <script src="src/views/HomeView.js"></script>
+  <script src="src/views/DataView.js"></script>
+  <!-- 路由設定 -->
+  <script src="src/router.js"></script>
+  <!-- 根元件，掛載 #app -->
+  <script src="src/app.js"></script>
+</body>
+</html>
