@@ -3,3 +3,9 @@ Thumbs.db
 *.log
 .vscode/
 .idea/
+
+# spec-kit / Claude workflow internals — kept locally, not published to GitHub
+.claude/
+.specify/
+specs/
+claude.md

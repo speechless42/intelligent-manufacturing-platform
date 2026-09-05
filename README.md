@@ -5,7 +5,6 @@
 「製造數據分析」所需的能力：不只是畫圖表，而是說明**為什麼這樣分類、為什麼這樣派工**。
 
 **線上展示（GitHub Pages）**：https://speechless42.github.io/intelligent-manufacturing-platform/
-**互動雛形（Claude Artifact）**：https://claude.ai/code/artifact/4f744405-a14c-4117-afa8-2a1328dd3cf1
 
 > 本專案沒有串接任何真實設備或資料庫。所有 Alarm 事件、機台參數、材料批號風險都是
 > 依產業公開文獻整理出的通用故障類別，即時生成的合成資料，僅供分析邏輯展示之用。
@@ -44,16 +43,7 @@ GitHub Pages 靜態託管上直接執行，不需要 Node.js 建置步驟。詳�
 
 ## 專案文件結構
 
-- [claude.md](claude.md) — 專案活文件：需求釐清過程、決策紀錄、每輪迭代的問題與修正
-- [specs/001-equipment-alarm-analysis/](specs/001-equipment-alarm-analysis/) — spec-kit 產出的正式規格
-  （spec.md / plan.md / research.md / data-model.md / quickstart.md / tasks.md）
 - [web/](web/) — 原始碼（HTML / CSS / Vue 元件 / 分類與派工邏輯）
-
-## 開發流程
-
-本專案採用「先 grill 後 spec」的兩階段流程（用連續提問釐清需求，收斂後再用
-[spec-kit](https://github.com/github/spec-kit) 產生正式規格與任務清單），並在每次使用者實測回饋後
-同步更新程式碼與文件，詳見 claude.md。
 
 ## 授權與資料聲明
 
